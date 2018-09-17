@@ -32,8 +32,8 @@ output/
 output.tar.gz
 
 app/
-dist/
 lib/
+cache/
 
 runtime/
 
@@ -48,5 +48,3 @@ package-lock.json
 .vscode
 jsconfig.json
 esconfig.json
-
-.docz/cache
