@@ -1,6 +1,6 @@
 {
   "name": "sprite-react",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Render spritejs elements using [React](https://reactjs.org/)",
   "main": "lib/index.js",
   "module": "lib/index.js",

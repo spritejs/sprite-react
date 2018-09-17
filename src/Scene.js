@@ -21,7 +21,7 @@ export default class extends Component {
   render() {
     const [width, height] = this.props.viewport || [300, 300];
     const style = {
-      position: 'absolute',
+      position: 'relative',
       width,
       height,
     };
