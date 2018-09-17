@@ -90,7 +90,7 @@ const SpriteRender = ReactFiberReconciler({
   // cancelDeferredCallback: ReactScheduler.cancelDeferredCallback,
   now,
 
-  // The Konva renderer is secondary to the React DOM renderer.
+  // The Sprite renderer is secondary to the React DOM renderer.
   isPrimaryRenderer: false,
 
   supportsMutation: true,
@@ -138,7 +138,7 @@ SpriteRender.injectIntoDevTools({
   findFiberByHostInstance: getClosestInstanceFromNode,
   bundleType: process.env.NODE_ENV !== 'production' ? 1 : 0,
   version: React.version || 16,
-  rendererPackageName: 'react-sprite',
+  rendererPackageName: 'sprite-react',
   getInspectorDataForViewTag: (...args) => {
     console.log(args); // eslint-disable-line no-console
   },

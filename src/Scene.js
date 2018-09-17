@@ -4,7 +4,6 @@ import {SpriteRender} from './SpriteRender';
 
 export default class extends Component {
   componentDidMount() {
-    // log Konva.Circle instance
     this._scene = new Scene(this.refs.scene, this.props);
     this._mountNode = SpriteRender.createContainer(this._scene);
     SpriteRender.updateContainer(this.props.children, this._mountNode, this);
@@ -25,9 +24,6 @@ export default class extends Component {
       width,
       height,
     };
-    // return (
-    //   <div ref="scene" style={style}></div>
-    // );
 
     return React.createElement('div', {ref: 'scene', style});
   }

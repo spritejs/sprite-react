@@ -1,6 +1,6 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import ReactDOM from 'react-dom';
-import {Scene} from '../../lib/index'; // eslint-disable-line no-unused-vars
+import {Scene} from '../../src/index'; // eslint-disable-line no-unused-vars
 
 class Block extends React.Component { // eslint-disable-line no-unused-vars
   constructor(props) {

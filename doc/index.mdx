@@ -1,0 +1,43 @@
+---
+name: Getting Started
+route: '/'
+---
+
+# Getting Started
+
+Sprite React is a JavaScript library for drawing complex canvas graphics using [React](https://reactjs.org/).
+
+It provides declarative and reactive bindings to the [SpriteJS](https://spritejs.org).
+
+## Installation
+
+```bash
+npm install sprite-react --save
+```
+
+## Examples
+
+import { Playground } from 'docz'
+
+import { Scene } from '../src'
+
+<Playground>
+  <Scene>
+    <layer>
+      <group display='flex' justifyContent="space-around" width={300} anchor={[0.5, 0.5]} pos={[150, 150]} bgcolor="#eee">
+        <sprite size={[50, 50]} bgcolor='red' opacity={0.3} 
+          onMouseEnter={function(){this.attr('opacity', 1.0)}}
+          onMouseLeave={function(){this.attr('opacity', 0.3)}}>
+        </sprite>
+        <sprite size={[50, 50]} bgcolor='green' opacity={0.3}
+          onMouseEnter={function(){this.attr('opacity', 1.0)}}
+          onMouseLeave={function(){this.attr('opacity', 0.3)}}>
+        </sprite>
+        <sprite size={[50, 50]} bgcolor='blue' opacity={0.3}
+          onMouseEnter={function(){this.attr('opacity', 1.0)}}
+          onMouseLeave={function(){this.attr('opacity', 0.3)}}>
+        </sprite>
+      </group>
+    </layer>
+  </Scene>
+</Playground>

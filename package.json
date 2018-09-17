@@ -7,6 +7,8 @@
   "scripts": {
     "start": "webpack-dev-server --watch-poll",
     "lint": "eslint --fix .js,.jsx src",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
     "build": "babel src -d lib",
     "prepublishOnly": "npm run build"
   },
@@ -31,6 +33,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^8.2.1",
     "babel-loader": "^8.0.2",
+    "docz": "^0.11.2",
     "eslint": "^4.19.1",
     "eslint-config-sprite": "^1.0.6",
     "eslint-plugin-html": "^4.0.3",
