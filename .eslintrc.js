@@ -9,5 +9,6 @@ module.exports = {
   rules: {
     "complexity": ["warn", 25],
     "import/no-mutable-exports": 'off',
+    "no-unused-vars": 'warn',
   },
 }
