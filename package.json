@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --watch-poll",
     "lint": "eslint --fix .js,.jsx src",
     "docz:dev": "docz dev",
-    "docz:build": "docz build && echo 'react.spritejs.org' > docs/CNAME",
+    "docz:build": "docz build && cp doc-src/favicon.ico docs/ && echo 'react.spritejs.org' > docs/CNAME",
     "build": "babel src -d lib",
     "prepublishOnly": "npm run build"
   },
