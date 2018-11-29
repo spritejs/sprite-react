@@ -12,7 +12,7 @@ function applyAttrs(target, props) {
   props = Object.assign({}, props);
 
   Object.keys(props).forEach((key) => {
-    if(key.startsWith('on')) {
+    if(key.indexOf('on') === 0) {
       const eventName = key.slice(2).toLowerCase();
       events[eventName] = props[key];
       delete props[key];
