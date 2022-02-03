@@ -1,5 +1,5 @@
 import React from 'react';
-import {createNode} from 'spritejs';
+import {createElement} from 'spritejs';
 import {now, rIC} from './ReactDOMFrameScheduling';
 import {getClosestInstanceFromNode} from './ReactDOMComponentTree';
 
@@ -12,14 +12,14 @@ function applyAttrs(target, props) {
   props = Object.assign({}, props);
 
   Object.keys(props).forEach((key) => {
-    if(key.indexOf('on') === 0) {
+    if (key.indexOf('on') === 0) {
       const eventName = key.slice(2).toLowerCase();
       events[eventName] = props[key];
       delete props[key];
     }
   });
 
-  if(typeof target === 'string') target = createNode(target, props);
+  if (typeof target === 'string') target = createElement(target, props);
   else target.attr(props);
 
   Object.keys(events).forEach((key) => {
